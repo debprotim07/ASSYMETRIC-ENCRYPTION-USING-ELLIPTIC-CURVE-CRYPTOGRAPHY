@@ -1,0 +1,88 @@
+shaswat@shaswat:~$ cd Desktop 
+shaswat@shaswat:~/Desktop$ cd Preserved 
+shaswat@shaswat:~/Desktop/Preserved$ ./server 
+ 
+The elliptic curve: y^2 mod 263 = (x^3+1x+1) mod 263 
+ 
+ 
+ 
+ 
+ 
+some point P  = (1, 23), 2P = (87, 61) 
+ 
+some point Q = (1, 240), P+Q = (0, 0) 
+ 
+P+=Q=(0,0) 
+ 
+P+=P=2P=(87,61) 
+ 
+ 
+ 
+EC message encryption example 
+ 
+
+
+ 
+=============================================== 
+ 
+ 
+ 
+G = (219, 118), order(G) is 64 
+ 
+ 
+ 
+Enter the 4 digit OTP: 2345 
+ 
+ 
+ 
+ 
+ 
+Shaswat's private key is a = 103 
+ 
+Shaswat's public key Pa = 103*(219, 118) = (51, 199) 
+ 
+ 
+ 
+Amitesh's public key Pb = 205*(219, 118) = (39, 218) 
+ 
+ 
+ 
+Mam's public key Pj = 209*(219, 118) = (103, 132) 
+ 
+ 
+ 
+ 
+ 
+Plain text message from Shaswat to Amitesh: (23, 45) 
+ 
+Shared secret between Shaswat and Amitesh Pk = 103*(39, 218) = (39, 45) 
+ 
+Encrypted message from Shaswat to Amitesh = (m.x*Pk.x, m.y*Pk.y) = (108, 184) 
+ 
+ 
+ 
+Shaswat sends Amitesh = {Pa,(c1,c2)} = {(51, 199), (108, 184)} 
+ 
+ 
+ 
+ 
+ 
+Socket successfully created.. 
+ 
+Socket successfully binded.. 
+ 
+Server listening.. 
+ 
+Mam's (the eavesdropper) private key Pj = 209 
+ 
+ 
+ 
+Mam's decrypted message from Shaswat(Evasdropper) is = (39, 6) 
+ 
+ 
+ 
+Server acccept the client... 
+ 
+
+ 
+ 
